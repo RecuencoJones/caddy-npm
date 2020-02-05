@@ -1,0 +1,25 @@
+{
+  "name": "caddy",
+  "version": "2.0.0-beta.13",
+  "description": "Install caddy with npm",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RecuencoJones/caddy-npm"
+  },
+  "scripts": {
+    "postinstall": "go-npm install",
+    "preuninstall": "go-npm uninstall"
+  },
+  "goBinary": {
+    "name": "caddy",
+    "path": "./bin",
+    "url": {
+      "linux": "https://github.com/caddyserver/caddy/releases/download/v{{version}}/caddy2_beta13_linux_{{arch}}",
+      "darwin": "https://github.com/caddyserver/caddy/releases/download/v{{version}}/caddy2_beta13_macos",
+      "windows": "https://github.com/caddyserver/caddy/releases/download/v{{version}}/caddy2_beta13_windows_amd64.exe"
+    }
+  },
+  "dependencies": {
+    "go-npm": "RecuencoJones/go-npm#f119087d44f0ba02f5f6a1630bbf54a1495ea0fa"
+  }
+}
