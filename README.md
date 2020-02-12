@@ -1,4 +1,4 @@
-[![npm version](https://badge.fury.io/js/caddy.svg)](https://badge.fury.io/js/caddy)
+[![npm version](https://badge.fury.io/js/caddy-npm.svg)](https://badge.fury.io/js/caddy-npm)
 
 # caddy-npm
 
