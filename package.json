@@ -20,6 +20,6 @@
     }
   },
   "dependencies": {
-    "go-npm": "RecuencoJones/go-npm#f119087d44f0ba02f5f6a1630bbf54a1495ea0fa"
+    "go-npm": "RecuencoJones/go-npm#8ca865460b2b1b04d9ffe7f777e2569b6318010a"
   }
 }
