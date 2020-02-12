@@ -1,0 +1,15 @@
+dist: trusty
+language: node_js
+node_js:
+  - "12"
+
+jobs:
+  include:
+    - os: linux
+      arch: amd64
+    - os: linux
+      arch: arm64
+    - os: osx
+    - os: windows
+
+install: npm install
