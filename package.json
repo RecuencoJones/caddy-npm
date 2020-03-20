@@ -1,6 +1,6 @@
 {
   "name": "caddy-npm",
-  "version": "2.0.0-beta.17",
+  "version": "2.0.0-beta.18",
   "description": "Install caddy with npm",
   "repository": {
     "type": "git",
@@ -14,9 +14,9 @@
     "name": "caddy",
     "path": "./bin",
     "url": {
-      "linux": "https://github.com/caddyserver/caddy/releases/download/v{{version}}/caddy2_beta17_linux_{{arch}}",
-      "darwin": "https://github.com/caddyserver/caddy/releases/download/v{{version}}/caddy2_beta17_macos",
-      "windows": "https://github.com/caddyserver/caddy/releases/download/v{{version}}/caddy2_beta17_windows_amd64.exe"
+      "linux": "https://github.com/caddyserver/caddy/releases/download/v{{version}}/caddy2_beta18_linux_{{arch}}",
+      "darwin": "https://github.com/caddyserver/caddy/releases/download/v{{version}}/caddy2_beta18_macos",
+      "windows": "https://github.com/caddyserver/caddy/releases/download/v{{version}}/caddy2_beta18_windows_amd64.exe"
     }
   },
   "dependencies": {
