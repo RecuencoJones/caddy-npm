@@ -1,6 +1,6 @@
 {
   "name": "caddy-npm",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Install caddy with npm",
   "repository": {
     "type": "git",
@@ -8,7 +8,8 @@
   },
   "scripts": {
     "postinstall": "go-npm install",
-    "preuninstall": "go-npm uninstall"
+    "preuninstall": "go-npm uninstall",
+    "test": "caddy -version"
   },
   "goBinary": {
     "name": "caddy",
