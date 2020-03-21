@@ -1,6 +1,6 @@
 {
   "name": "caddy-npm",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Install caddy with npm",
   "repository": {
     "type": "git",
