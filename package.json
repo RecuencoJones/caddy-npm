@@ -1,6 +1,6 @@
 {
   "name": "caddy-npm",
-  "version": "2.0.0-rc.1",
+  "version": "2.0.0-rc.1.2",
   "description": "Install caddy with npm",
   "repository": {
     "type": "git",
@@ -8,28 +8,29 @@
   },
   "scripts": {
     "postinstall": "go-npm install",
-    "preuninstall": "go-npm uninstall"
+    "preuninstall": "go-npm uninstall",
+    "caddy:version": "caddy version"
   },
   "goBinary": {
     "name": "caddy",
     "path": "./bin",
     "url": {
       "linux": {
-        "386": "https://github.com/caddyserver/caddy/releases/download/v{{version}}/caddy_{{version}}_Linux_i386.tar.gz",
-        "amd64": "https://github.com/caddyserver/caddy/releases/download/v{{version}}/caddy_{{version}}_Linux_x86_64.tar.gz",
-        "arm": "https://github.com/caddyserver/caddy/releases/download/v{{version}}/caddy_{{version}}_Linux_armv7.tar.gz",
-        "arm64": "https://github.com/caddyserver/caddy/releases/download/v{{version}}/caddy_{{version}}_Linux_arm64.tar.gz"
+        "386": "https://github.com/caddyserver/caddy/releases/download/v2.0.0-rc.1/caddy_2.0.0-rc.1_Linux_i386.tar.gz",
+        "amd64": "https://github.com/caddyserver/caddy/releases/download/v2.0.0-rc.1/caddy_2.0.0-rc.1_Linux_x86_64.tar.gz",
+        "arm": "https://github.com/caddyserver/caddy/releases/download/v2.0.0-rc.1/caddy_2.0.0-rc.1_Linux_armv7.tar.gz",
+        "arm64": "https://github.com/caddyserver/caddy/releases/download/v2.0.0-rc.1/caddy_2.0.0-rc.1_Linux_arm64.tar.gz"
       },
       "freebsd": {
-        "386": "https://github.com/caddyserver/caddy/releases/download/v{{version}}/caddy_{{version}}_freebsd_i386.tar.gz",
-        "amd64": "https://github.com/caddyserver/caddy/releases/download/v{{version}}/caddy_{{version}}_freebsd_x86_64.tar.gz",
-        "arm": "https://github.com/caddyserver/caddy/releases/download/v{{version}}/caddy_{{version}}_freebsd_armv7.tar.gz",
-        "arm64": "https://github.com/caddyserver/caddy/releases/download/v{{version}}/caddy_{{version}}_freebsd_arm64.tar.gz"
+        "386": "https://github.com/caddyserver/caddy/releases/download/v2.0.0-rc.1/caddy_2.0.0-rc.1_freebsd_i386.tar.gz",
+        "amd64": "https://github.com/caddyserver/caddy/releases/download/v2.0.0-rc.1/caddy_2.0.0-rc.1_freebsd_x86_64.tar.gz",
+        "arm": "https://github.com/caddyserver/caddy/releases/download/v2.0.0-rc.1/caddy_2.0.0-rc.1_freebsd_armv7.tar.gz",
+        "arm64": "https://github.com/caddyserver/caddy/releases/download/v2.0.0-rc.1/caddy_2.0.0-rc.1_freebsd_arm64.tar.gz"
       },
-      "darwin": "https://github.com/caddyserver/caddy/releases/download/v{{version}}/caddy_{{version}}_macOS_x86_64.tar.gz",
+      "darwin": "https://github.com/caddyserver/caddy/releases/download/v2.0.0-rc.1/caddy_2.0.0-rc.1_macOS_x86_64.tar.gz",
       "windows": {
-        "386": "https://github.com/caddyserver/caddy/releases/download/v{{version}}/caddy_{{version}}_Windows_i386.zip",
-        "amd64": "https://github.com/caddyserver/caddy/releases/download/v{{version}}/caddy_{{version}}_Windows_x86_64.zip"
+        "386": "https://github.com/caddyserver/caddy/releases/download/v2.0.0-rc.1/caddy_2.0.0-rc.1_Windows_i386.zip",
+        "amd64": "https://github.com/caddyserver/caddy/releases/download/v2.0.0-rc.1/caddy_2.0.0-rc.1_Windows_x86_64.zip"
       }
     }
   },

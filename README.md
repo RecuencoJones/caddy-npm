@@ -14,3 +14,11 @@ Then run:
 ```
 npm publish
 ```
+
+## Testing
+
+To test linux architectures (amd64, arm64, armv7 and i386), run the following:
+
+```
+docker-compose build
+```

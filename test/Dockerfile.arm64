@@ -1,0 +1,11 @@
+# node:12 linux/arm64/v8
+FROM node@sha256:41f983e475d42f3d159e988621b2d964dfc8da9dd5e65a0b3b1ee9482c90b1b9
+
+WORKDIR /test
+
+COPY . .
+
+RUN chown -R $(whoami) /test
+RUN node -p '`${ process.platform }/${ process.arch }`'
+RUN npm install --unsafe-perm
+RUN npm run caddy:version

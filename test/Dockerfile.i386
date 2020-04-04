@@ -1,0 +1,13 @@
+# i386/node:12-alpine
+FROM i386/node:12-alpine
+
+RUN apk add git
+
+WORKDIR /test
+
+COPY . .
+
+RUN chown -R $(whoami) /test
+RUN node -p '`${ process.platform }/${ process.arch }`'
+RUN npm install --unsafe-perm
+RUN npm run caddy:version

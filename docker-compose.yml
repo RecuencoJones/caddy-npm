@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  armv7:
+    build:
+      context: .
+      dockerfile: test/Dockerfile.armv7
+  arm64:
+    build:
+      context: .
+      dockerfile: test/Dockerfile.arm64
+  amd64:
+    build:
+      context: .
+      dockerfile: test/Dockerfile.amd64
+  i386:
+    build:
+      context: .
+      dockerfile: test/Dockerfile.i386
