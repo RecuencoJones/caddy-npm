@@ -13,7 +13,3 @@ services:
     build:
       context: .
       dockerfile: test/Dockerfile.amd64
-  i386:
-    build:
-      context: .
-      dockerfile: test/Dockerfile.i386
